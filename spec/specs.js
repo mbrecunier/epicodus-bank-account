@@ -6,6 +6,10 @@ describe("BankAccount", function() {
   });
   it("will add the withdraw method to BankAccount objects", function() {
     var testBankAccount = new BankAccount("Mike", 500);
-    expect(testBankAccount.withdraw(300)).to.equal(200);
-  })
+    expect(testBankAccount.withdraw(200)).to.equal(300);
+  });
+  it("will add the deposit method to BankAccount objects", function() {
+    var testBankAccount = new BankAccount("Mike", 500);
+    expect(testBankAccount.deposit(200)).to.equal(700);
+  });
 });
